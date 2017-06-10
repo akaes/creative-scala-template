@@ -7,6 +7,13 @@ import doodle.backend.StandardInterpreter._
 
 object Workshop{
 
+	val myCircleOne = circle(1)
+	val myCircleTwo = circle(10)
+	val myCircleThree = circle(100)
+	val myRectangle = rectangle(10,20)
+	val myTriangle = triangle(60,40)
+
+
 	def drawCircle = {
 
 		val myCircle = circle(10)
@@ -14,15 +21,32 @@ object Workshop{
 	}
 
 	def drawRectangle = {
-
-		val myRectangle = rectangle(100,50)
+		
 		myRectangle.draw
 	}
 
 	def drawTriangle = {
-
-		val myTriangle = triangle(60,40)
+	
 		myTriangle.draw
+	}
+
+	def drawGoRoundInCircles = {
+		
+		myCircleOne.draw
+		myCircleTwo.draw
+		myCircleThree.draw
+	}
+
+	def drawMoreFigures = {
+
+		(myCircleTwo beside myTriangle).draw
+
+	}
+
+	def drawCircleBesideRectangle = {
+
+		(myCircleTwo beside myRectangle).draw
+
 	}
 
 }
