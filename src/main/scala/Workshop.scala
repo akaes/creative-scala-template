@@ -49,4 +49,28 @@ object Workshop{
 
 	}
 
+	def drawCircleAboveRectangle = {
+
+		(myCircleTwo above myRectangle).draw
+
+	}
+
+	def drawCircleBelowRectangle = {
+
+		(myCircleTwo below myRectangle).draw
+
+	}
+
+	def drawCircleOnRectangle = {
+
+		(myCircleTwo on myRectangle).draw
+
+	}
+
+	def drawCircleUnderRectangle = {
+
+		(myCircleTwo under myRectangle).draw
+
+	}
+
 }
