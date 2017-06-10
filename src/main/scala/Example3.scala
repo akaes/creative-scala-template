@@ -6,8 +6,10 @@ import doodle.backend.StandardInterpreter._
 
 object Example3 {
 
-	val one = 1
-	val anImage = Image.circle(100).fillColor(Color.red)
-	
+//	val one = 1
+//	val anImage = Image.circle(100).fillColor(Color.red)
+
+	val aNumber = 1
+	val one = aNumber 
 }
 
