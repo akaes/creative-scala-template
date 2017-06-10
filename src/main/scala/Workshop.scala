@@ -10,7 +10,12 @@ object Workshop{
 	val myCircleOne = circle(1)
 	val myCircleTwo = circle(10)
 	val myCircleThree = circle(100)
+	val myCircleFour = circle(20)
+	val myCircleFive = circle(30)
 	val myRectangle = rectangle(10,20)
+	val myRectangleTwo = rectangle(6, 20)
+	val myRectangleThree = rectangle(20, 6)
+	val myRectangleFour = rectangle(80, 25)
 	val myTriangle = triangle(60,40)
 
 
@@ -71,6 +76,17 @@ object Workshop{
 
 		(myCircleTwo under myRectangle).draw
 
+	}
+
+	def drawStayOnTarget = {
+
+		(
+			(myCircleTwo fillColor Color.red) on
+			(myCircleFour fillColor Color.white) on
+			(myCircleFive fillColor Color.red lineWidth 2) above
+			(myRectangleTwo fillColor Color.white above myRectangleThree fillColor Color.brown) above
+			(myRectangleFour lineWidth 0 fillColor Color.green)
+		)
 	}
 
 }
