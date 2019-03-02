@@ -1,4 +1,4 @@
-scalaVersion := "2.12.2"
+scalaVersion := "2.12.6"
 
 resolvers += Resolver.bintrayRepo("underscoreio", "training")
 
@@ -16,6 +16,6 @@ cleanupCommands in console := """
     """.trim.stripMargin
 
 libraryDependencies ++= Seq(
-  "underscoreio" %% "doodle" % "0.8.0",
-  "org.typelevel" %% "cats" % "0.9.0"
+  "underscoreio" %% "doodle" % "0.8.3",
+  "org.typelevel" %% "cats-core" % "1.1.0"
 )
